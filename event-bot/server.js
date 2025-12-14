@@ -4,7 +4,6 @@ import cors from "cors";
 import morgan from "morgan";
 import dotenv from "dotenv";
 
-
 dotenv.config();
 
 const app = express();
@@ -170,4 +169,5 @@ mongoose.connect(MONGODB_URI)
     console.error("❌ Mongo connection error:", err);
     process.exit(1);
   });
+
 
